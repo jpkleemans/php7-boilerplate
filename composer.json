@@ -1,5 +1,6 @@
 {
     "name": "relevo/php7-boilerplate",
+    "description": "A tiny, yet powerful foundation for building modern web applications.",
     "type": "project",
     "license": "MIT",
     "require": {
