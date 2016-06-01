@@ -17,7 +17,20 @@ $containerBuilder->addDefinitions($services);
 $container = $containerBuilder->build();
 
 /*
- * Run application
+ * Build application middleware pipeline
  */
-$app = $container->get(App\Application::class);
-$app->run($middleware);
+$relayBuilder = $container->get(Relay\RelayBuilder::class);
+$app = $relayBuilder->newInstance($middleware);
+
+/*
+ * Run application middleware pipeline
+ */
+$request = Zend\Diactoros\ServerRequestFactory::fromGlobals();
+$response = new Zend\Diactoros\Response();
+$response = $app($request, $response);
+
+/*
+ * Emit response
+ */
+$emitter = $container->get(Zend\Diactoros\Response\EmitterInterface::class);
+$emitter->emit($response);
