@@ -1,5 +1,5 @@
 <?php
 
 return [
-    // Add your middleware here
+    // Add your application middleware here
 ];
