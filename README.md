@@ -14,3 +14,4 @@ composer create-project relevo/php7-boilerplate <project-path>
 
 * Dependency Injection using [PHP-DI](https://github.com/PHP-DI/PHP-DI).
 * [PSR-7](https://github.com/php-fig/http-message) middleware using [Relay](https://github.com/relayphp/Relay.Relay) and [zend-diactoros](https://github.com/zendframework/zend-diactoros).
+* Only 29 Logical Lines of Code (LLOC)
