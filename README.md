@@ -1,10 +1,8 @@
 # PHP7 Boilerplate
 
-[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://packagist.org/packages/relevo/php7-boilerplate)
+A tiny, yet powerful foundation for building modern web applications.
 
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/35d0d0f3-0f25-48bf-911c-655083f79cec/big.png)](https://insight.sensiolabs.com/projects/35d0d0f3-0f25-48bf-911c-655083f79cec)
-
-A tiny, yet powerful foundation for building modern web applications.
 
 ## Quick start
 
