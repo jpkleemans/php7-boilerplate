@@ -1,5 +1,7 @@
 # PHP7 Boilerplate
 
+[![Join the chat at https://gitter.im/relevo/php7-boilerplate](https://badges.gitter.im/relevo/php7-boilerplate.svg)](https://gitter.im/relevo/php7-boilerplate?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 A tiny, yet powerful foundation for building modern web applications.
 
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/35d0d0f3-0f25-48bf-911c-655083f79cec/big.png)](https://insight.sensiolabs.com/projects/35d0d0f3-0f25-48bf-911c-655083f79cec)
