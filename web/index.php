@@ -25,8 +25,8 @@ $app = $relayBuilder->newInstance($middleware);
 /*
  * Run application middleware pipeline
  */
-$request = Zend\Diactoros\ServerRequestFactory::fromGlobals();
-$response = new Zend\Diactoros\Response();
+$request = $container->get(Psr\Http\Message\ServerRequestInterface::class);
+$response = $container->get(Psr\Http\Message\ResponseInterface::class);
 $response = $app($request, $response);
 
 /*

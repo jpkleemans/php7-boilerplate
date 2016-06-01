@@ -1,9 +1,11 @@
 <?php
 
 use Interop\Container\ContainerInterface;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
 use Relay\RelayBuilder;
-use Zend\Diactoros\Response\EmitterInterface;
-use Zend\Diactoros\Response\SapiEmitter;
+use Zend\Diactoros\Response;
+use Zend\Diactoros\ServerRequestFactory;
 
 return [
     RelayBuilder::class => function (ContainerInterface $c) {
@@ -15,9 +17,11 @@ return [
             return $middleware;
         };
 
-        $relayBuilder = new RelayBuilder($resolver);
-
-        return $relayBuilder;
+        return new RelayBuilder($resolver);
     },
-    EmitterInterface::class => DI\object(SapiEmitter::class),
+    ServerRequestInterface::class => function () {
+        return ServerRequestFactory::fromGlobals();
+    },
+    ResponseInterface::class => DI\object(Response::class),
+    Response\EmitterInterface::class => DI\object(Response\SapiEmitter::class),
 ];
