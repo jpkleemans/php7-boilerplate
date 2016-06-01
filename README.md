@@ -7,7 +7,7 @@ A tiny, yet powerful foundation for building modern web applications.
 ## Quick start
 
 ```bash
-composer create-project relevo/php7-boilerplate app
+composer create-project relevo/php7-boilerplate <project-path>
 ```
 
 ## Features
