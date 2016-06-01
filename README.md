@@ -1,10 +1,13 @@
 # PHP7 Boilerplate
 
-A tiny, yet powerful foundation for building modern web applications.
+[![Gitter][gitter-image]][gitter-url]
+[![Packagist][packagist-image]][packagist-url]
+[![Licence][license-image]][license-url]
 
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/35d0d0f3-0f25-48bf-911c-655083f79cec/big.png)](https://insight.sensiolabs.com/projects/35d0d0f3-0f25-48bf-911c-655083f79cec)
+[![SensioLabsInsight][insight-image]][insight-url]
 
-PHP7 Boilerplate does not impose a specific development philosophy or framework, so you're free to structure the code the way you want.
+PHP7 Boilerplate is a tiny (29 LLOC), yet powerful foundation for building modern web applications.
+It does not impose a specific development philosophy or framework, so you're free to structure the code the way you want.
 
 ## Quick start
 
@@ -16,3 +19,12 @@ composer create-project relevo/php7-boilerplate <project-path>
 
 * Dependency Injection using [PHP-DI](https://github.com/PHP-DI/PHP-DI).
 * [PSR-7](https://github.com/php-fig/http-message) middleware using [Relay](https://github.com/relayphp/Relay.Relay) and [zend-diactoros](https://github.com/zendframework/zend-diactoros).
+
+[gitter-image]: https://img.shields.io/gitter/room/relevo/php7-boilerplate.svg?style=flat-square
+[gitter-url]: https://gitter.im/relevo/php7-boilerplate
+[packagist-image]: https://img.shields.io/packagist/v/relevo/php7-boilerplate.svg?style=flat-square
+[packagist-url]: https://packagist.org/packages/relevo/php7-boilerplate
+[license-image]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
+[license-url]: https://github.com/relevo/php7-boilerplate/blob/master/LICENSE.md
+[insight-image]: https://insight.sensiolabs.com/projects/35d0d0f3-0f25-48bf-911c-655083f79cec/big.png
+[insight-url]: https://insight.sensiolabs.com/projects/35d0d0f3-0f25-48bf-911c-655083f79cec
