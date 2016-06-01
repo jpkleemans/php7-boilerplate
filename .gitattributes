@@ -1,0 +1,6 @@
+# Force normalized (LF) line endings.
+* text=auto
+
+# Exclude files from git archive.
+.gitattributes export-ignore
+.gitignore export-ignore
