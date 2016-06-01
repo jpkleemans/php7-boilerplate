@@ -19,7 +19,13 @@ return [
 
         return new RelayBuilder($resolver);
     },
-    ServerRequestInterface::class => DI\factory([ServerRequestFactory::class, 'fromGlobals']),
-    ResponseInterface::class => DI\object(Response::class),
-    Response\EmitterInterface::class => DI\object(Response\SapiEmitter::class),
+    ServerRequestInterface::class => function () {
+        return ServerRequestFactory::fromGlobals();
+    },
+    ResponseInterface::class => function () {
+        return new Response();
+    },
+    Response\EmitterInterface::class => function () {
+        return new Response\SapiEmitter();
+    },
 ];
