@@ -7,8 +7,12 @@ use Zend\Diactoros\Response\SapiEmitter;
 
 return [
     RelayBuilder::class => function (ContainerInterface $c) {
-        $resolver = function ($class) use ($c) {
-            return $c->get($class);
+        $resolver = function ($middleware) use ($c) {
+            if (is_string($middleware)) {
+                $middleware = $c->get($middleware);
+            }
+
+            return $middleware;
         };
 
         $relayBuilder = new RelayBuilder($resolver);
