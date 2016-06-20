@@ -13,6 +13,7 @@ It does not impose a specific development philosophy or (micro)framework, so you
 
 * Dependency Injection using [PHP-DI](https://github.com/PHP-DI/PHP-DI).
 * [PSR-7](https://github.com/php-fig/http-message) middleware using [Relay](https://github.com/relayphp/Relay.Relay) and [zend-diactoros](https://github.com/zendframework/zend-diactoros).
+* Tests using [PHPUnit](https://github.com/sebastianbergmann/phpunit).
 * Web server with [nginx](http://nginx.org/) and [PHP-FPM](http://php-fpm.org/) using [Docker](https://github.com/docker/docker).
 
 ## Quick start
