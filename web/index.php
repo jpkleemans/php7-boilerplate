@@ -26,8 +26,8 @@ $app = $relayBuilder->newInstance($middleware);
 /*
  * Run application middleware pipeline
  */
-$request = $container->get(Psr\Http\Message\ServerRequestInterface::class);
-$response = $container->get(Psr\Http\Message\ResponseInterface::class);
+$request = $container->get('initial_request');
+$response = $container->get('initial_response');
 $response = $app($request, $response);
 
 /*

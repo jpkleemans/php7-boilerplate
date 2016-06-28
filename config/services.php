@@ -2,8 +2,6 @@
 declare(strict_types = 1);
 
 use Interop\Container\ContainerInterface;
-use Psr\Http\Message\ResponseInterface;
-use Psr\Http\Message\ServerRequestInterface;
 use Relay\RelayBuilder;
 use Zend\Diactoros\Response;
 use Zend\Diactoros\ServerRequestFactory;
@@ -20,10 +18,10 @@ return [
 
         return new RelayBuilder($resolver);
     },
-    ServerRequestInterface::class => function () {
+    'initial_request' => function () {
         return ServerRequestFactory::fromGlobals();
     },
-    ResponseInterface::class => function () {
+    'initial_response' => function () {
         return new Response();
     },
     Response\EmitterInterface::class => function () {

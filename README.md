@@ -6,7 +6,7 @@
 
 [![SensioLabsInsight][insight-image]][insight-url]
 
-PHP7 Boilerplate is a tiny (44 LLOC), yet powerful foundation for building modern web applications.
+PHP7 Boilerplate is a tiny (42 LLOC), yet powerful foundation for building modern web applications.
 It does not impose a specific development philosophy or (micro)framework, so you're free to structure the code the way you want.
 
 ## Features
